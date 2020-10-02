@@ -1,0 +1,61 @@
+use quiz;
+
+create table logintable(
+username varchar(40),
+password varchar(40)
+);
+
+select *from logintable
+delete from logintable
+
+-------------------------------------------------
+create table registertable(
+fname varchar(40),
+lname varchar(30),
+mobileno int,
+emailid varchar(30),
+dateofbirth int,
+username varchar(40),
+password varchar(40),
+
+);
+select *from registertable
+---------------------------------------------------------
+create table sciencequestions(
+qno int,
+questions varchar(90),
+option1 varchar(30),
+option2 varchar(30),
+option3 varchar(30),
+option4 varchar(30),
+answer varchar(30),
+optionchoosed varchar(30)
+);
+
+select * from sciencequestions;
+
+delete from sciencequestions
+------------------------------------------------------------
+
+create table generalquiz(
+qno int,
+questions varchar(90),
+option1 varchar(30),
+option2 varchar(30),
+option3 varchar(30),
+option4 varchar(30),
+answer varchar(30),
+optionchoosed varchar(30)
+);
+
+select *from generalquiz;
+delete from generalquiz
+
+----------------------------------
+create table differentquiz(
+quizname varchar(40),
+numbers int,
+);
+drop table differentquiz;
+select * from differentquiz
+delete from differentquiz 
